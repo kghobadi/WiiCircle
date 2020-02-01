@@ -70,6 +70,12 @@ public class MarioClicker : AudioHandler
         if (myAudioSource.isPlaying)
             myAudioSource.Stop();
 
+        //reset mats 
+        for (int i = 0; i < mRenderers.Length; i++)
+        {
+            mRenderers[i].material = origMats[i];
+        }
+
         //reset c machine 
         if (cCamera)
         {
