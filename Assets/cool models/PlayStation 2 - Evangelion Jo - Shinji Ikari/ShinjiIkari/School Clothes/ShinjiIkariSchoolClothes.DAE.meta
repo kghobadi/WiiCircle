@@ -134,6 +134,7 @@ ModelImporter:
     4300000: SMDImport
     9500000: //RootNode
     13700000: SMDImport 1
+    13700002: SMDImport
   externalObjects: {}
   materials:
     importMaterials: 1
