@@ -27,7 +27,7 @@ Material:
     - _Float0: 5
     - _Range: 7.3
     - _Speed: 1.3
-    - _Teleport: 4.8
+    - _Teleport: -0.4
     - __dirty: 0
     m_Colors:
     - _Tiling: {r: 54.44, g: 50, b: 0, a: 0}

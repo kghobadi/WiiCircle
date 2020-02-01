@@ -179,7 +179,7 @@ Material:
     - _Color0: {r: 0, g: 0, b: 0, a: 1}
     - _CoverageGradientOffset: {r: 9.48, g: 5.07, b: 0, a: 0}
     - _GradientOffset: {r: 0.5, g: -1.81, b: 0, a: 0}
-    - _HorizonColor: {r: 0.5990566, g: 1, b: 0.9336369, a: 1}
+    - _HorizonColor: {r: 0.9735719, g: 1, b: 0.6, a: 1}
     - _NightColor: {r: 0, g: 0, b: 0.10377359, a: 0}
     - _NightColorBottom: {r: 0.18014252, g: 0.10137326, b: 0.5514706, a: 0}
     - _NightColorTop: {r: 0, g: 0, b: 0, a: 0}
