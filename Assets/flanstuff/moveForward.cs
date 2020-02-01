@@ -32,7 +32,7 @@ public class moveForward : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            whipTimer += 3;
+            whipTimer += .5f;
             whip.Play();
         }
          
