@@ -48,8 +48,8 @@ public class DRIVE : MonoBehaviour
     {
         //moving 
         transform.localPosition += transform.forward * speed;
-        Camera.main.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y + 2,
-        transform.localPosition.z - 4);
+        Camera.main.transform.localPosition = new Vector3(transform.localPosition.x - 7, transform.localPosition.y + 119,
+        transform.localPosition.z - 236);
 
 
         //acceleration 
@@ -122,7 +122,8 @@ public class DRIVE : MonoBehaviour
             transform.localEulerAngles += new Vector3(0, turningSpeedtouse, 0);
         }
 
-        //sparks 
+        //sparks
+        /*
 
         if ((Input.GetKey(KeyCode.Semicolon)) && (Input.GetKey(KeyCode.A)) && speed > 0)
         {
@@ -145,7 +146,7 @@ public class DRIVE : MonoBehaviour
             SparksL = false;
         }
     }
-    /*
+    
     void FixedUpdate()
     {
 
@@ -170,5 +171,7 @@ public class DRIVE : MonoBehaviour
             }
         }
     }
+    
     */
+    }
 }
