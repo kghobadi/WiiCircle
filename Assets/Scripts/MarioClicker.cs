@@ -25,6 +25,15 @@ public class MarioClicker : AudioHandler
         origMat = mRenderer.material;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (myAudioSource.isPlaying)
+                myAudioSource.Stop();
+        }   
+    }
+
     void OnMouseEnter()
     {
         SetRandomMaterial(active);
@@ -38,10 +47,7 @@ public class MarioClicker : AudioHandler
     void OnMouseDown()
     {
         //stop...  
-        if (myAudioSource.isPlaying)
-        {
-            myAudioSource.Stop();
-        }
+       
         PlayRandomSoundRandomPitch(screams, 1f);
 
         transform.localScale *= 2;
