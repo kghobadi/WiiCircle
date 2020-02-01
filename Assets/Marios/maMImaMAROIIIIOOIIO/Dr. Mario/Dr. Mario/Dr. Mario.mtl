@@ -1,0 +1,90 @@
+# Blender3D MTL File: Dr. Mario.blend
+# Material Count: 8
+newmtl Material.008_Dr._Mario_Hand_+_
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Hand + Feet Texture.png
+
+
+newmtl Material.001_Dr._Mario_Coat_Te
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Coat Texture.png
+
+
+newmtl Material.007_Dr._Mario_Hair_Te
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Hair Texture.png
+
+
+newmtl Material.006_Dr._Mario_Eye_Tex
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Eye Texture.png
+
+
+newmtl Material.003_Dr._Mario_Hand_+_
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Hand + Feet Texture.png
+
+
+newmtl Material.002_Dr._Mario_Stethes
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Stethescope Texture.png
+
+
+newmtl Material.004_Dr._Mario_Face_Te
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Face Texture.png
+
+
+newmtl Material.005_Dr._Mario_Head_Pi
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Dr. Mario Head Piece Texture.png
+
+

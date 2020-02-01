@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 915685df297724292b904f434c6c9862
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ma_mdl1
+    100002: ma_mdl1_center
+    100004: ma_mdl1_Character
+    100006: ma_mdl1_Character_PIVOT
+    100008: ma_mdl1_chn_chest
+    100010: ma_mdl1_chn_foot_L
+    100012: ma_mdl1_chn_foot_R
+    100014: ma_mdl1_eff_sldr_L
+    100016: ma_mdl1_jnt_arm_L1
+    100018: ma_mdl1_jnt_arm_L2
+    100020: ma_mdl1_jnt_arm_R1
+    100022: ma_mdl1_jnt_arm_R2
+    100024: ma_mdl1_jnt_chest
+    100026: ma_mdl1_jnt_foot_L
+    100028: ma_mdl1_jnt_foot_R
+    100030: ma_mdl1_jnt_hand_L
+    100032: ma_mdl1_jnt_hand_R
+    100034: ma_mdl1_jnt_head
+    100036: ma_mdl1_jnt_leg_L1
+    100038: ma_mdl1_jnt_leg_L2
+    100040: ma_mdl1_jnt_leg_R1
+    100042: ma_mdl1_jnt_leg_R2
+    100044: ma_mdl1_jnt_sldr_L
+    100046: ma_mdl1_jnt_sldr_R
+    100048: ma_mdl1_jnt_waist
+    100050: ma_mdl1_M_foot_L
+    100052: ma_mdl1_M_foot_R
+    100054: ma_mdl1_M_hand1_L
+    100056: ma_mdl1_M_hand1_R
+    100058: ma_mdl1_M_head
+    100060: ma_mdl1_M_head_cap1
+    100062: ma_mdl1_mdl1
+    100064: //RootNode
+    400000: ma_mdl1
+    400002: ma_mdl1_center
+    400004: ma_mdl1_Character
+    400006: ma_mdl1_Character_PIVOT
+    400008: ma_mdl1_chn_chest
+    400010: ma_mdl1_chn_foot_L
+    400012: ma_mdl1_chn_foot_R
+    400014: ma_mdl1_eff_sldr_L
+    400016: ma_mdl1_jnt_arm_L1
+    400018: ma_mdl1_jnt_arm_L2
+    400020: ma_mdl1_jnt_arm_R1
+    400022: ma_mdl1_jnt_arm_R2
+    400024: ma_mdl1_jnt_chest
+    400026: ma_mdl1_jnt_foot_L
+    400028: ma_mdl1_jnt_foot_R
+    400030: ma_mdl1_jnt_hand_L
+    400032: ma_mdl1_jnt_hand_R
+    400034: ma_mdl1_jnt_head
+    400036: ma_mdl1_jnt_leg_L1
+    400038: ma_mdl1_jnt_leg_L2
+    400040: ma_mdl1_jnt_leg_R1
+    400042: ma_mdl1_jnt_leg_R2
+    400044: ma_mdl1_jnt_sldr_L
+    400046: ma_mdl1_jnt_sldr_R
+    400048: ma_mdl1_jnt_waist
+    400050: ma_mdl1_M_foot_L
+    400052: ma_mdl1_M_foot_R
+    400054: ma_mdl1_M_hand1_L
+    400056: ma_mdl1_M_hand1_R
+    400058: ma_mdl1_M_head
+    400060: ma_mdl1_M_head_cap1
+    400062: ma_mdl1_mdl1
+    400064: //RootNode
+    2100000: _mat_head
+    2100002: _mat_head_2_
+    2100004: _mat_head_3_
+    2100006: _mat_head_4_
+    2100008: _mat_head_5_
+    2100010: _mat_head_6_
+    2100012: _mat_head_7_
+    2100014: _mat_eye_L
+    2100016: _mat_eye_R
+    2100018: _mat_head_8_
+    2100020: _mat_mouse
+    4300000: ma_mdl1
+    9500000: //RootNode
+    13700000: ma_mdl1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
