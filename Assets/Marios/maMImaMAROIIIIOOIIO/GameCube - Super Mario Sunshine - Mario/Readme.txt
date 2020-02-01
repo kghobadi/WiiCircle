@@ -1,0 +1,1 @@
+This model was ripped by Shadowth117 using either the BMD script for 3dsMax or BMDView2. No credit needed.
