@@ -1,0 +1,1 @@
+This model was ripped using MrAdults's GitMO and and mesh2rdm programs by Shadowth117. If you want to give credit for this rip give it to MrAdults.

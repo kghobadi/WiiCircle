@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 373e46a35663b4ada9287dbd73546cca
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BONE_ROOT
+    100002: eff_loc00
+    100004: eff_loc01
+    100006: eff_loc02
+    100008: eff_loc03
+    100010: eff_loc04
+    100012: eff_loc05
+    100014: eff_loc06
+    100016: eff_loc07
+    100018: eff_loc08
+    100020: eff_loc09
+    100022: eff_loc10
+    100024: eff_loc11
+    100026: eff_loc12
+    100028: eff_loc13
+    100030: GMSOption
+    100032: //RootNode
+    100034: Matriel_bdy
+    100036: Mtrl_L0_leg00
+    100038: Mtrl_L0_leg01
+    100040: Mtrl_L0_leg02
+    100042: Mtrl_L1_leg00
+    100044: Mtrl_L1_leg01
+    100046: Mtrl_L1_leg02
+    100048: Mtrl_Pelvis
+    100050: Mtrl_R0_leg00
+    100052: Mtrl_R0_leg01
+    100054: Mtrl_R0_leg02
+    100056: Mtrl_R1_leg00
+    100058: Mtrl_R1_leg01
+    100060: Mtrl_R1_leg02
+    100062: Mtrl_Spine
+    100064: NotABone0
+    100066: NotABone1
+    100068: NotABone2
+    100070: NotABone3
+    100072: NotABone4
+    100074: NotABone5
+    100076: Root_Matriel
+    100078: SMDImport
+    100080: transform_ef_buttom
+    100082: transform_ef_middle_LB
+    100084: transform_ef_middle_LF
+    100086: transform_ef_middle_RB
+    100088: transform_ef_middle_RF
+    100090: transform_ef_top_B
+    100092: transform_ef_top_F
+    100094: transform_ef_top_L
+    100096: transform_ef_top_R
+    100098: transform_eff_C
+    100100: transform_eff_L0
+    100102: transform_eff_L1
+    100104: transform_eff_R0
+    100106: transform_eff_R1
+    400000: BONE_ROOT
+    400002: eff_loc00
+    400004: eff_loc01
+    400006: eff_loc02
+    400008: eff_loc03
+    400010: eff_loc04
+    400012: eff_loc05
+    400014: eff_loc06
+    400016: eff_loc07
+    400018: eff_loc08
+    400020: eff_loc09
+    400022: eff_loc10
+    400024: eff_loc11
+    400026: eff_loc12
+    400028: eff_loc13
+    400030: GMSOption
+    400032: //RootNode
+    400034: Matriel_bdy
+    400036: Mtrl_L0_leg00
+    400038: Mtrl_L0_leg01
+    400040: Mtrl_L0_leg02
+    400042: Mtrl_L1_leg00
+    400044: Mtrl_L1_leg01
+    400046: Mtrl_L1_leg02
+    400048: Mtrl_Pelvis
+    400050: Mtrl_R0_leg00
+    400052: Mtrl_R0_leg01
+    400054: Mtrl_R0_leg02
+    400056: Mtrl_R1_leg00
+    400058: Mtrl_R1_leg01
+    400060: Mtrl_R1_leg02
+    400062: Mtrl_Spine
+    400064: NotABone0
+    400066: NotABone1
+    400068: NotABone2
+    400070: NotABone3
+    400072: NotABone4
+    400074: NotABone5
+    400076: Root_Matriel
+    400078: SMDImport
+    400080: transform_ef_buttom
+    400082: transform_ef_middle_LB
+    400084: transform_ef_middle_LF
+    400086: transform_ef_middle_RB
+    400088: transform_ef_middle_RF
+    400090: transform_ef_top_B
+    400092: transform_ef_top_F
+    400094: transform_ef_top_L
+    400096: transform_ef_top_R
+    400098: transform_eff_C
+    400100: transform_eff_L0
+    400102: transform_eff_L1
+    400104: transform_eff_R0
+    400106: transform_eff_R1
+    2100000: Material__35
+    2100002: Material__36
+    2100004: Material__37
+    2100006: Material__38
+    2100008: Material__39
+    2100010: Material__40
+    4300000: SMDImport
+    9500000: //RootNode
+    13700000: SMDImport
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

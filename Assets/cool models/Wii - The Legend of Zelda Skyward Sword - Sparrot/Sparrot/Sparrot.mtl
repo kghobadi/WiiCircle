@@ -1,0 +1,59 @@
+# Blender MTL File: ''
+# Material Count: 5
+newmtl Beads.png_Beads.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.713190 0.431960 0.497197
+Ks 0.711538 0.711538 0.711538
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Beads.png
+map_d Beads.png
+
+
+newmtl Body.png_Body.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.501990 0.491995 0.673030
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Body.png
+
+
+newmtl Eye.0.png_Eye.0.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.546048 0.471195 0.424634
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd Eye.0.png
+map_d Eye.0.png
+
+
+newmtl Eyeball.png_Eyeball.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.384224 0.371136 0.477544
+Ks 0.326923 0.326923 0.326923
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Eyeball.png
+
+
+newmtl Face.png_Face.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.562339 0.497133 0.640657
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Face.png
+
+

@@ -1,0 +1,29 @@
+# Material file for sbspeeddemon.obj
+
+newmtl sb_face
+	Ns 0
+	d 1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ks 0.0 0.0 0.0
+	Ka 0.2 0.2 0.2
+	map_Kd GQ4E78_4e6f47c4_14.png
+
+newmtl sb_holes
+	Ns 0
+	d 1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ks 0.0 0.0 0.0
+	Ka 0.2 0.2 0.2
+	map_Kd GQ4E78_aa3dd2a5_14.png
+
+newmtl sb_pants
+	Ns 0
+	d 1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ks 0.0 0.0 0.0
+	Ka 0.2 0.2 0.2
+	map_Kd GQ4E78_9fb23572_14.png
+
