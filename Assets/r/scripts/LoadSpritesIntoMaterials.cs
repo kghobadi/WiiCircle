@@ -8,6 +8,8 @@ using System.Linq;
     using UnityEditor;
 #endif
 
+namespace Rick {
+
 [ExecuteInEditMode]
 public class LoadSpritesIntoMaterials : MonoBehaviour
 {
@@ -30,28 +32,32 @@ public class LoadSpritesIntoMaterials : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(texture == null || tex != texture.name){
-            tex = (texture == null)? "":texture.name;
-            bind = false;
+        if(!Application.isPlaying){
+            if(texture == null || tex != texture.name){
+                tex = (texture == null)? "":texture.name;
+                bind = false;
+            }
+            else
+                bind = true;
+
+            if(texture == null){
+                subsprites = new Sprite[]{};
+                ClearMaterials();
+            }
+            else {
+                if(!bind){
+                    #if UNITY_EDITOR
+                        var path = AssetDatabase.GetAssetPath(texture);
+                        subsprites = AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().ToArray();
+                    #endif
+
+                    ClearMaterials();
+                    BindMaterials();
+                }
+            }
         }
         else
             bind = true;
-
-        if(texture == null){
-            subsprites = new Sprite[]{};
-            ClearMaterials();
-        }
-        else {
-            if(!bind){
-                #if UNITY_EDITOR
-                    var path = AssetDatabase.GetAssetPath(texture);
-                    subsprites = AssetDatabase.LoadAllAssetsAtPath(path).OfType<Sprite>().ToArray();
-                #endif
-
-                ClearMaterials();
-                BindMaterials();
-            }
-        }
 
         ParseMaterials();
     }
@@ -96,4 +102,6 @@ public class LoadSpritesIntoMaterials : MonoBehaviour
             }
         }
     }
+}
+
 }
