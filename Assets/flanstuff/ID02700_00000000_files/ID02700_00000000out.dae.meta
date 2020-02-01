@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: f2d93b122827341e6a7efd3c166510f9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _I_u_W_F_N_g07
+    100002: _I_u_W_F_N_g08
+    100004: _I_u_W_F_N_g09
+    100006: _I_u_W_F_N_g10
+    100008: _I_u_W_F_N_g11
+    100010: _I_u_W_F_N_g12
+    100012: _I_u_W_F_N_g13
+    100014: _I_u_W_F_N_g14
+    100016: _I_u_W_F_N_g15
+    100018: _I_u_W_F_N_g16
+    100020: _I_u_W_F_N_g17
+    100022: _I_u_W_F_N_g19
+    100024: bigsaboten_nemoto
+    100026: flower02
+    100028: hand
+    100030: //RootNode
+    100032: MaxRootBone
+    100034: mesh0
+    100036: mesh1
+    100038: mesh10
+    100040: mesh11
+    100042: mesh12
+    100044: mesh13
+    100046: mesh14
+    100048: mesh15
+    100050: mesh2
+    100052: mesh3
+    100054: mesh4
+    100056: mesh5
+    100058: mesh6
+    100060: mesh7
+    100062: mesh8
+    100064: mesh9
+    100066: obj_041_cactusflower
+    100068: saboten
+    100070: tubomi
+    400000: _I_u_W_F_N_g07
+    400002: _I_u_W_F_N_g08
+    400004: _I_u_W_F_N_g09
+    400006: _I_u_W_F_N_g10
+    400008: _I_u_W_F_N_g11
+    400010: _I_u_W_F_N_g12
+    400012: _I_u_W_F_N_g13
+    400014: _I_u_W_F_N_g14
+    400016: _I_u_W_F_N_g15
+    400018: _I_u_W_F_N_g16
+    400020: _I_u_W_F_N_g17
+    400022: _I_u_W_F_N_g19
+    400024: bigsaboten_nemoto
+    400026: flower02
+    400028: hand
+    400030: //RootNode
+    400032: MaxRootBone
+    400034: mesh0
+    400036: mesh1
+    400038: mesh10
+    400040: mesh11
+    400042: mesh12
+    400044: mesh13
+    400046: mesh14
+    400048: mesh15
+    400050: mesh2
+    400052: mesh3
+    400054: mesh4
+    400056: mesh5
+    400058: mesh6
+    400060: mesh7
+    400062: mesh8
+    400064: mesh9
+    400066: obj_041_cactusflower
+    400068: saboten
+    400070: tubomi
+    2100000: X__DesignDataDigimon_map_00_map_textures_tx3065_sand03_tga
+    2100002: X__DesignDataDigimon_map_00_map_textures_tx3063_cactus02_tga
+    2100004: X__DesignDataDigimon_map_00_map_textures_tx3061_flower01_tga
+    2100006: X__DesignDataDigimon_map_00_map_textures_tx3062_flower02_tga
+    4300000: mesh0
+    4300002: mesh1
+    4300004: mesh2
+    4300006: mesh3
+    4300008: mesh4
+    4300010: mesh5
+    4300012: mesh6
+    4300014: mesh7
+    4300016: mesh8
+    4300018: mesh9
+    4300020: mesh10
+    4300022: mesh11
+    4300024: mesh12
+    4300026: mesh13
+    4300028: mesh14
+    4300030: mesh15
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: mesh0
+    13700002: mesh1
+    13700004: mesh10
+    13700006: mesh11
+    13700008: mesh12
+    13700010: mesh13
+    13700012: mesh14
+    13700014: mesh15
+    13700016: mesh2
+    13700018: mesh3
+    13700020: mesh4
+    13700022: mesh5
+    13700024: mesh6
+    13700026: mesh7
+    13700028: mesh8
+    13700030: mesh9
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
