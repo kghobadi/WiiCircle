@@ -41,16 +41,19 @@ public class MarioClicker : AudioHandler
 
         //set orig cmanchine values
         mainCam = Camera.main;
-      
-        transposer = cCamera.GetCinemachineComponent<CinemachineTransposer>();
-        composer = cCamera.GetCinemachineComponent<CinemachineComposer>();
-        origFollow = transposer.m_FollowOffset;
-        origAim = composer.m_TrackedObjectOffset;
 
-        //noise
-        cNoise = cCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        origAmp = cNoise.m_AmplitudeGain;
-        origFreq = cNoise.m_FrequencyGain;
+        if (cCamera)
+        {
+            transposer = cCamera.GetCinemachineComponent<CinemachineTransposer>();
+            composer = cCamera.GetCinemachineComponent<CinemachineComposer>();
+            origFollow = transposer.m_FollowOffset;
+            origAim = composer.m_TrackedObjectOffset;
+
+            //noise
+            cNoise = cCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            origAmp = cNoise.m_AmplitudeGain;
+            origFreq = cNoise.m_FrequencyGain;
+        }
     }
 
     void Update()
@@ -67,13 +70,22 @@ public class MarioClicker : AudioHandler
         if (myAudioSource.isPlaying)
             myAudioSource.Stop();
 
+        //reset mats 
+        for (int i = 0; i < mRenderers.Length; i++)
+        {
+            mRenderers[i].material = origMats[i];
+        }
+
         //reset c machine 
-        cNoise.m_AmplitudeGain = origAmp;
-        cNoise.m_FrequencyGain = origFreq;
-        transposer.m_FollowOffset = origFollow;
-        composer.m_TrackedObjectOffset = origAim;
-        // for 1 sec
-        mainCam.clearFlags = CameraClearFlags.Color;
+        if (cCamera)
+        {
+            cNoise.m_AmplitudeGain = origAmp;
+            cNoise.m_FrequencyGain = origFreq;
+            transposer.m_FollowOffset = origFollow;
+            composer.m_TrackedObjectOffset = origAim;
+            // for 1 sec
+            mainCam.clearFlags = CameraClearFlags.Color;
+        }
     }
 
     void OnMouseEnter()
@@ -97,17 +109,21 @@ public class MarioClicker : AudioHandler
 
         lerpScale.SetScaler(3f, lerpScale.origScale);
 
-        cNoise.m_AmplitudeGain += 1;
-        cNoise.m_FrequencyGain += 1;
+        //cMachine fuckup
+        if (cCamera)
+        {
+            cNoise.m_AmplitudeGain += 1;
+            cNoise.m_FrequencyGain += 1;
 
-        //transposer
-        float randomX = Random.Range(-1f, 1f);
-        float randomY = Random.Range(-1f, 1f);
-        float randomZ = Random.Range(-1f, 1f);
-        transposer.m_FollowOffset += new Vector3(randomX, randomY, randomZ);
+            //transposer
+            float randomX = Random.Range(-1f, 1f);
+            float randomY = Random.Range(-1f, 1f);
+            float randomZ = Random.Range(-1f, 1f);
+            transposer.m_FollowOffset += new Vector3(randomX, randomY, randomZ);
 
-        //composer
-        composer.m_TrackedObjectOffset -= new Vector3(randomX, randomY, randomZ);
+            //composer
+            composer.m_TrackedObjectOffset -= new Vector3(randomX, randomY, randomZ);
+        }
     }
 
     void OnMouseExit()
