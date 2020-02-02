@@ -1,55 +1,17 @@
 fileFormatVersion: 2
-guid: a14c8f5ffe1ae3d4b83e7d909a93a5d1
+guid: 5e9070849a01049ff90a82de594d4d96
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: BoneMario:n0b0
-    100004: joint1
-    100006: joint10
-    100008: joint11
-    100010: joint12
-    100012: joint13
-    100014: joint14
-    100016: joint15
-    100018: joint16
-    100020: joint17
-    100022: joint18
-    100024: joint19
-    100026: joint2
-    100028: joint3
-    100030: joint4
-    100032: joint5
-    100034: joint6
-    100036: joint7
-    100038: joint8
-    100040: joint9
-    400000: //RootNode
-    400002: BoneMario:n0b0
-    400004: joint1
-    400006: joint10
-    400008: joint11
-    400010: joint12
-    400012: joint13
-    400014: joint14
-    400016: joint15
-    400018: joint16
-    400020: joint17
-    400022: joint18
-    400024: joint19
-    400026: joint2
-    400028: joint3
-    400030: joint4
-    400032: joint5
-    400034: joint6
-    400036: joint7
-    400038: joint8
-    400040: joint9
-    2100000: BoneMario_m1
-    4300000: BoneMario:n0b0
-    9500000: //RootNode
-    13700000: BoneMario:n0b0
-    2186277476908879412: ImportLogs
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: Shape.083
+    2100002: Shape.082
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -103,7 +65,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -130,7 +92,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

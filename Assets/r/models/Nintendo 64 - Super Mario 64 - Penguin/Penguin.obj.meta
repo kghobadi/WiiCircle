@@ -1,54 +1,25 @@
 fileFormatVersion: 2
-guid: a14c8f5ffe1ae3d4b83e7d909a93a5d1
+guid: e81fd9f29547345eca90511a4495682c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: BoneMario:n0b0
-    100004: joint1
-    100006: joint10
-    100008: joint11
-    100010: joint12
-    100012: joint13
-    100014: joint14
-    100016: joint15
-    100018: joint16
-    100020: joint17
-    100022: joint18
-    100024: joint19
-    100026: joint2
-    100028: joint3
-    100030: joint4
-    100032: joint5
-    100034: joint6
-    100036: joint7
-    100038: joint8
-    100040: joint9
-    400000: //RootNode
-    400002: BoneMario:n0b0
-    400004: joint1
-    400006: joint10
-    400008: joint11
-    400010: joint12
-    400012: joint13
-    400014: joint14
-    400016: joint15
-    400018: joint16
-    400020: joint17
-    400022: joint18
-    400024: joint19
-    400026: joint2
-    400028: joint3
-    400030: joint4
-    400032: joint5
-    400034: joint6
-    400036: joint7
-    400038: joint8
-    400040: joint9
-    2100000: BoneMario_m1
-    4300000: BoneMario:n0b0
-    9500000: //RootNode
-    13700000: BoneMario:n0b0
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: Material.044
+    2100002: Material.043
+    2100004: Material.042_Penguin_grp.png
+    2100006: Material.041_Penguin_grp.png
+    2100008: Material.040
+    2100010: Material.039
+    2100012: Material.038
+    2100014: Material.037
+    2100016: Material.036
+    2100018: Material.035
+    2300000: default
+    3300000: default
+    4300000: default
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -103,7 +74,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -130,7 +101,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
