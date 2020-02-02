@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -83,8 +84,12 @@ public class PlayerMove : MonoBehaviour
             {
                 if (endTim < 30)
                     endTim += Time.deltaTime;
-                // else
                 //DOTRansition
+                else
+                {
+                    SceneUtils scene = FindObjectOfType<SceneUtils>();
+                    scene.LoadSceneByIndex(SceneManager.GetActiveScene().buildIndex + 1);
+                }
             }
 
 

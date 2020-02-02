@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class moveForward : MonoBehaviour
 {
@@ -8,11 +10,13 @@ public class moveForward : MonoBehaviour
     public int speed;
     public AudioSource whip; 
     public float whipTimer;
+    public SceneUtils scene;
 
     // Start is called before the first frame update
     void Start()
     {
         whipTimer = 0;
+        scene = FindObjectOfType<SceneUtils>();
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class moveForward : MonoBehaviour
         if (transform.position.z >= 10822)
         {
             Debug.Log("to julian's scene now");
+            scene.LoadSceneByIndex(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if (whipTimer >= 1)

@@ -147,6 +147,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b64adae401bc073408ac7bff0993c107, type: 2}
   - {fileID: 2100000, guid: 0119aa6226e2a4cfdb6c9a5ba9df7820, type: 2}
   cCamera: {fileID: 0}
+  currentClicks: 0
+  clicksNecessary: 15
+  scene: {fileID: 0}
 --- !u!82 &6250259904871575025
 AudioSource:
   m_ObjectHideFlags: 0

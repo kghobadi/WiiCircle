@@ -5,7 +5,8 @@ using UnityEngine;
 public class FlashBurnMario : AudioHandler
 {
     [Header("Mario Screams")]
-    public AudioClip[] screams;
+    public AudioClip scream1;
+    public AudioClip scream2;
 
     [Header("Materials")]
     public SkinnedMeshRenderer[] mRenderers;
@@ -47,7 +48,7 @@ public class FlashBurnMario : AudioHandler
     //does the cool flash mario effect 
     IEnumerator FlashBurnToSkeleton()
     {
-        PlayRandomSoundRandomPitch(screams, 1f);
+        PlaySoundRandomPitch(scream1, 1f);
 
         for(int i = 0; i < burnFrameCount; i++)
         {
@@ -65,10 +66,11 @@ public class FlashBurnMario : AudioHandler
             }
 
             yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
         }
 
         videoPlayer.SetActive(true);
-        PlayRandomSoundRandomPitch(screams, 1f);
+        PlaySoundRandomPitch(scream2, 1f);
         SetMaterial(dissolveBurn);
 
         //set dissolves
