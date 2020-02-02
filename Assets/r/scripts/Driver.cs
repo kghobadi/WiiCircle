@@ -105,12 +105,6 @@ namespace Rick {
                 nerves.strength = 0f;
             }
 
-            if(Input.GetKeyDown(KeyCode.A))
-                paper.Assemble();
-            else if(Input.GetKeyDown(KeyCode.D))
-                paper.Crumble();
-
-
             if(debug){
                 EnsureDebug();
                 debugObject.transform.position = position;

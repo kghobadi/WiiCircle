@@ -7,6 +7,9 @@ namespace Rick {
 
     public class Paper : MonoBehaviour
     {
+        public delegate void OnCrumbled();
+        public event OnCrumbled onCrumbled;
+
         Fragment[] fragments;
 
 
@@ -61,6 +64,9 @@ namespace Rick {
 
             active = false;
 
+            if(onCrumbled != null)
+                onCrumbled();
+                
             Erase();
         }
 

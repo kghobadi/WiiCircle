@@ -17,7 +17,7 @@ public class SimpleTransition : MonoBehaviour
     float transitionTime = 0f, transition_t = 0f;
     float direction = 0f;
 
-    [SerializeField] bool onawake = false;
+    [SerializeField] bool onawake = false, overrideInteractable = true;
     [SerializeField] float defaultTransitionIn = 1f, defaultTransitionOut = 1f;
 
     private void Awake() {
@@ -61,9 +61,11 @@ public class SimpleTransition : MonoBehaviour
 
         group.alpha = alpha;
     
-        bool interactable = (alpha > 0f);
-            group.blocksRaycasts = interactable;
-            group.interactable = interactable;
+        if(overrideInteractable){
+            bool interactable = (alpha > 0f);
+                group.blocksRaycasts = interactable;
+                group.interactable = interactable;
+        }
     }
 
     public void TransitionIn(){
