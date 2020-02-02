@@ -29,6 +29,9 @@ public class MarioClicker : AudioHandler
     CinemachineBasicMultiChannelPerlin cNoise;
     float origAmp, origFreq;
 
+    public int currentClicks =0 ;
+    public int clicksNecessary = 50;
+
     public override void Awake()
     {
         base.Awake();
@@ -95,6 +98,8 @@ public class MarioClicker : AudioHandler
 
         //reset music val
         mixer.SetFloat("musicVol", origMusicVol);
+
+        currentClicks = 0;
     }
 
     void OnMouseEnter()
@@ -138,6 +143,12 @@ public class MarioClicker : AudioHandler
 
             //composer
             composer.m_TrackedObjectOffset -= new Vector3(randomX, randomY, randomZ);
+        }
+
+        //break glass and transition?
+        if(currentClicks > clicksNecessary)
+        {
+            //transition 
         }
     }
 

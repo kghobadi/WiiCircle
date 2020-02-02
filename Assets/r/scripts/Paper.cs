@@ -12,9 +12,14 @@ namespace Rick {
 
         Fragment[] fragments;
 
+        public bool forDrawing = true;
+
 
         [SerializeField] new Camera camera;
-        [SerializeField] RenderTexture texture;
+        public RenderTexture texture;
+        public Texture2D tex;
+        public Material mat;
+        public TakeScreenshot takeShot;
 
         [SerializeField] GameObject drawBrush, brushContainer;
         [SerializeField] List<GameObject> brushes = new List<GameObject>();
@@ -29,6 +34,17 @@ namespace Rick {
         void Start()
         {
             fragments = GetComponentsInChildren<Fragment>();
+
+            if (!forDrawing)
+                gameObject.SetActive(false);
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Crumble();
+            }
         }
 
         public Vector2 GetPositionOnPaper(Vector3 point){
@@ -37,14 +53,17 @@ namespace Rick {
         }
 
         public void Draw(Vector3 p){
-            Vector2 position = GetPositionOnPaper(p);
-            Vector2 normal_position = ((position * 5f) + Vector2.one) / 2f;
+            if (forDrawing)
+            {
+                Vector2 position = GetPositionOnPaper(p);
+                Vector2 normal_position = ((position * 5f) + Vector2.one) / 2f;
 
-            var pos = camera.ViewportToWorldPoint(new Vector3(normal_position.x, normal_position.y, 100f));
+                var pos = camera.ViewportToWorldPoint(new Vector3(normal_position.x, normal_position.y, 100f));
 
-            var b = Instantiate(drawBrush, pos, drawBrush.transform.rotation, brushContainer.transform);
+                var b = Instantiate(drawBrush, pos, drawBrush.transform.rotation, brushContainer.transform);
                 b.transform.localScale = Vector3.one * brushSize;
                 brushes.Add(b);
+            }
         }
 
         void Erase(){
@@ -59,15 +78,24 @@ namespace Rick {
         }
 
         public void Crumble(){
-            foreach(Fragment fr in fragments)
+            if (!forDrawing)
+            {
+                tex = takeShot.tex;
+                mat.mainTexture = tex;
+            }
+
+            foreach (Fragment fr in fragments)
                 fr.active = false;
 
             active = false;
 
+            if (!forDrawing)
+                return;
+
             if(onCrumbled != null)
                 onCrumbled();
 
-            Erase();
+                Erase();
         }
 
         public void Assemble(){
@@ -76,6 +104,8 @@ namespace Rick {
 
             active = true;  
         }
+        
+        
     }
 
 }

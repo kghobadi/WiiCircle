@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class FadeVidTransparency : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class FadeVidTransparency : MonoBehaviour
     public bool fading;
     public float fadeSpeed;
     public float fadeTo = 0.01f;
+    public SceneUtils scene;
+    public Rick.Paper glassPlane;
 
     void Awake()
     {
@@ -17,6 +20,7 @@ public class FadeVidTransparency : MonoBehaviour
 
     void Start()
     {
+        //glassPlane.gameObject.SetActive(false);
         SetFade();
     }
 
@@ -35,6 +39,16 @@ public class FadeVidTransparency : MonoBehaviour
             {
                 fading = false;
             }
+        }
+
+        //when video is over, crummble
+        if(vidPlayer.frame >= (long)vidPlayer.frameCount - 2)
+        {
+            FindObjectOfType<TakeScreenshot>().TakeShot();
+            glassPlane.gameObject.SetActive(true);
+            glassPlane.Crumble();
+
+            scene.LoadSceneByIndex(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
