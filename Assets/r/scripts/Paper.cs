@@ -19,6 +19,8 @@ namespace Rick {
         [Range(0f, 1f)]
         public float brushSize = 1f;
 
+        public bool active = true;
+
 
         // Start is called before the first frame update
         void Start()
@@ -57,12 +59,16 @@ namespace Rick {
             foreach(Fragment fr in fragments)
                 fr.active = false;
 
+            active = false;
+
             Erase();
         }
 
         public void Assemble(){
             foreach(Fragment fr in fragments)
                 fr.active = true;
+
+            active = true;  
         }
     }
 

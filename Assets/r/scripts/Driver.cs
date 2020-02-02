@@ -7,7 +7,12 @@ namespace Rick {
     public class Driver : MonoBehaviour
     {
         Paper paper;
+        Nerves nerves;
 
+
+        public float speed = 0f;
+        public float threshold = 133f;
+        Vector3 a, b;
 
         Vector3 m_position;
         public Vector3 position {
@@ -32,9 +37,11 @@ namespace Rick {
         bool m_hitting = false;
         public bool colliding {
             get{
-                return m_hitting;
+                return m_hitting && paper.active;
             }
         }
+
+        Vector3 origin;
 
         new Camera camera;
             Ray ray;
@@ -53,13 +60,22 @@ namespace Rick {
         void Start()
         {
             camera = GetComponent<Camera>();
+            nerves = GetComponent<Nerves>();
+
             paper = FindObjectOfType<Paper>();
+
+            a = b = Input.mousePosition;
+            origin = transform.position;
         }
 
         // Update is called once per frame
         void Update()
         {
             Vector3 mouse = Input.mousePosition;
+
+            b = mouse;
+            speed = (b - a).magnitude / Time.deltaTime;
+            a = b;
 
             ray = camera.ScreenPointToRay(mouse);
             raycastHit = new RaycastHit();
@@ -69,14 +85,24 @@ namespace Rick {
                 position = raycastHit.point;
                 normal = raycastHit.normal;
 
-                if(Input.GetMouseButton(0))
-                    Draw();
-                else
+                if(Input.GetMouseButton(0)) {
+                    nerves.strength = Mathf.Clamp01(speed / threshold);
+
+                    if(speed > threshold)
+                        paper.Crumble();
+                    else
+                        Draw();
+                }
+                else{
                     brushTime = brushRefresh;
+                    nerves.strength = 0f;
+                }
             }
             else{
                 position = camera.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y, defaultDistance));
                 normal = -camera.transform.forward;
+
+                nerves.strength = 0f;
             }
 
             if(Input.GetKeyDown(KeyCode.A))
@@ -92,6 +118,12 @@ namespace Rick {
             else
                 ClearDebug();
 
+            SmoothPosition();
+        }
+
+        void SmoothPosition(){
+            Vector3 target = origin + transform.TransformVector(nerves.offset);
+            transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * 3f);
         }
 
         void Draw(){
