@@ -16,6 +16,7 @@ public class FadeVidTransparency : MonoBehaviour
     void Awake()
     {
         vidPlayer = GetComponent<VideoPlayer>();
+        scene = FindObjectOfType<SceneUtils>();
     }
 
     void Start()

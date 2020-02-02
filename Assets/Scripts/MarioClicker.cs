@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class MarioClicker : AudioHandler
 {
@@ -31,6 +32,7 @@ public class MarioClicker : AudioHandler
 
     public int currentClicks =0 ;
     public int clicksNecessary = 50;
+    public SceneUtils scene;
 
     public override void Awake()
     {
@@ -50,6 +52,8 @@ public class MarioClicker : AudioHandler
 
         //set orig cmanchine values
         mainCam = Camera.main;
+
+        scene = FindObjectOfType<SceneUtils>();
 
         if (cCamera)
         {
@@ -145,10 +149,13 @@ public class MarioClicker : AudioHandler
             composer.m_TrackedObjectOffset -= new Vector3(randomX, randomY, randomZ);
         }
 
+        currentClicks++;
+
         //break glass and transition?
         if(currentClicks > clicksNecessary)
         {
             //transition 
+            scene.LoadSceneByIndex(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
