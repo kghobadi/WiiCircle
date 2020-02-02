@@ -17,6 +17,10 @@ public class FlashBurnMario : AudioHandler
     public Animator skeletonMario;
     public int burnFrameCount;
 
+    public GameObject myCam, nextCam;
+    public GameObject angel;
+    public GameObject healthBar;
+
     public override void Awake()
     {
         base.Awake();
@@ -33,6 +37,10 @@ public class FlashBurnMario : AudioHandler
     
     void Start()
     {
+        myCam.SetActive(true);
+        nextCam.SetActive(false);
+        angel.SetActive(false);
+        healthBar.SetActive(false);
         StartCoroutine(FlashBurnToSkeleton());
     }
 
@@ -70,6 +78,10 @@ public class FlashBurnMario : AudioHandler
         }
 
         skeletonMario.enabled = true;
+        myCam.SetActive(false);
+        nextCam.SetActive(true);
+        angel.SetActive(true);
+        healthBar.SetActive(true);
     }
     
     //set all renderers to array of mats 
