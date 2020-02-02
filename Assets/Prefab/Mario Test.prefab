@@ -132,6 +132,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 62085cc355029a544af63e731659b1a2, type: 3}
   - {fileID: 8300000, guid: 48d4d6f5d134c5c4493ff8ce21d95f05, type: 3}
   - {fileID: 8300000, guid: 27343efd07fc57545b5c85dee62a4a92, type: 3}
+  mixer: {fileID: 24100000, guid: f62b46c220980ff46824370921233a1f, type: 2}
   mRenderers:
   - {fileID: 6250259904534144509}
   - {fileID: 6250259904534144511}
