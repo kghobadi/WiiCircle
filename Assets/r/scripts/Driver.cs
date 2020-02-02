@@ -29,18 +29,19 @@ namespace Rick {
             }
         }
 
+        bool m_hitting = false;
+        public bool colliding {
+            get{
+                return m_hitting;
+            }
+        }
+
         new Camera camera;
             Ray ray;
             RaycastHit raycastHit;
             [SerializeField] LayerMask rayMask;
             [SerializeField] float rayDistance = 100f, defaultDistance = 1f;
 
-        [SerializeField] Camera drawCamera;
-        [SerializeField] GameObject drawBrush, brushContainer;
-                         List<GameObject> brushes = new List<GameObject>();
-
-        [Range(0f, 1f)]
-        public float brushSize = 1f;
         public float brushRefresh = .1f;
                float brushTime = 0f;
 
@@ -63,8 +64,8 @@ namespace Rick {
             ray = camera.ScreenPointToRay(mouse);
             raycastHit = new RaycastHit();
 
-            bool hitting = Physics.Raycast(ray, out raycastHit, rayDistance, rayMask.value);
-            if(hitting){
+            m_hitting = Physics.Raycast(ray, out raycastHit, rayDistance, rayMask.value);
+            if(colliding){
                 position = raycastHit.point;
                 normal = raycastHit.normal;
 
@@ -96,16 +97,7 @@ namespace Rick {
         void Draw(){
 
             if(brushTime >= brushRefresh){
-                Vector2 position = paper.GetPositionOnPaper(raycastHit.point);
-                Vector2 normal_position = ((position * 5f) + Vector2.one) / 2f;
-                    Debug.Log(normal_position);
-
-                var pos = drawCamera.ViewportToWorldPoint(new Vector3(normal_position.x, normal_position.y, 100f));
-
-                var b = Instantiate(drawBrush, pos, drawBrush.transform.rotation, brushContainer.transform);
-                    b.transform.localScale = Vector3.one * brushSize;
-                    brushes.Add(b);
-
+                paper.Draw(raycastHit.point);
                 brushTime = 0f;
             }
             else
