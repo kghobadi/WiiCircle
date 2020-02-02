@@ -9,11 +9,12 @@ public class DanceJoint : MonoBehaviour
     public movType rotMoveType;
     public Vector2 rotX, rotY, rotZ;
     public movType scaleMoveType;
-    public Vector2 scaleX, scaleY, scaleZ;
+    public Vector2 scaleX = new Vector2(1f, 1f), scaleY = new Vector2(1f, 1f), scaleZ = new Vector2(1f, 1f);
 
-    public bool randomSpectrumBand;
-    [Range(0, 9)]
+    [Range(0, 6)]
     public int spectrumBand;
+
+    public float pingPongSpeed = 1f;
 
     public enum movType
     {

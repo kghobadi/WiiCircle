@@ -40,6 +40,8 @@ public class AudioSpectrum : MonoBehaviour
     public BandType bandType = BandType.TenBand;
     public float fallSpeed = 0.08f;
     public float sensibility = 8.0f;
+    [Range(0, 1)]
+    public float smoothAmount = 0.5f;
     #endregion
 
     #region Private variables
@@ -47,6 +49,7 @@ public class AudioSpectrum : MonoBehaviour
     float[] levels;
     float[] peakLevels;
     float[] meanLevels;
+    float[] smoothLevels;
     #endregion
 
     #region Public property
@@ -64,6 +67,10 @@ public class AudioSpectrum : MonoBehaviour
     {
         get { return meanLevels; }
     }
+    public float[] SmoothLevels
+    {
+        get { return smoothLevels; }
+    }
     #endregion
 
     #region Private functions
@@ -79,6 +86,7 @@ public class AudioSpectrum : MonoBehaviour
             levels = new float[bandCount];
             peakLevels = new float[bandCount];
             meanLevels = new float[bandCount];
+            smoothLevels = new float[bandCount];
         }
     }
 
@@ -129,10 +137,12 @@ public class AudioSpectrum : MonoBehaviour
             peakLevels[bi] = Mathf.Max(peakLevels[bi] - falldown, bandMax);
             meanLevels[bi] = bandMax - (bandMax - meanLevels[bi]) * filter;
 
+            smoothLevels[bi] = Mathf.Lerp(smoothLevels[bi], meanLevels[bi], 1 - smoothAmount);
+
             //            Debug.Log(bi + "||" + levels[bi]);
+
+
         }
-
-
     }
     #endregion
 }
