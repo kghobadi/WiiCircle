@@ -136,6 +136,7 @@ ModelImporter:
     4300000: SMDImport
     9500000: //RootNode
     13700000: SMDImport
+    13700002: SMDImport 1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -167,7 +168,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

@@ -45,7 +45,7 @@ public class LerpMaterial : MonoBehaviour {
 
         if (lerpOnStart)
         {
-            Lerp(endValue, lerpSpeed);
+            Lerp(mRenderer.material, endValue, lerpSpeed);
         }
 	}
 
@@ -60,9 +60,9 @@ public class LerpMaterial : MonoBehaviour {
     }
 
     //call to begin lerp 
-    public void Lerp(float desiredValue, float speed)
+    public void Lerp(Material mat, float desiredValue, float speed)
     {
-        lerpMat = mRenderer.material;
+        lerpMat = mat;
         startValue = lerpMat.GetFloat(floatToLerp);
         endValue = desiredValue;
         lerpSpeed = speed;

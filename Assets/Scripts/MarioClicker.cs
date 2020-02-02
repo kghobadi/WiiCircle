@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using Cinemachine;
 
 public class MarioClicker : AudioHandler
 {
     [Header("Mario Screams")]
     public AudioClip[] screams;
+    public AudioMixer mixer;
+    float origMusicVol;
 
     [Header("Materials")]
     public SkinnedMeshRenderer[] mRenderers;
@@ -38,6 +41,9 @@ public class MarioClicker : AudioHandler
         {
             origMats[i] = mRenderers[i].material;
         }
+
+        //get orig music vol
+        mixer.GetFloat("musicVol", out origMusicVol);
 
         //set orig cmanchine values
         mainCam = Camera.main;
@@ -86,6 +92,9 @@ public class MarioClicker : AudioHandler
             // for 1 sec
             mainCam.clearFlags = CameraClearFlags.Color;
         }
+
+        //reset music val
+        mixer.SetFloat("musicVol", origMusicVol);
     }
 
     void OnMouseEnter()
@@ -108,6 +117,12 @@ public class MarioClicker : AudioHandler
         transform.localScale *= 2;
 
         lerpScale.SetScaler(3f, lerpScale.origScale);
+
+        //increase music volume in the mixer 
+        //float tempVol;
+        //mixer.GetFloat("musicVol", out tempVol);
+        //if(tempVol < 15) 
+        //    mixer.SetFloat("musicVol", tempVol += 0.5f);
 
         //cMachine fuckup
         if (cCamera)
