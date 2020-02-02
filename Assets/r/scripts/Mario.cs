@@ -39,7 +39,7 @@ namespace Rick {
                 }
                 else {
                     pencil.transform.position = l_hand.position + l_hand.TransformDirection(pencilInactiveOffset);
-                    pencil.transform.up = l_hand.transform.forward;
+                    pencil.transform.up = l_hand.transform.right;
                 }
             }    
         }

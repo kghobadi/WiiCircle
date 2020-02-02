@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: 18934f47a643448d792aaa023722e411
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Mario:Head
+    100002: Mario:HeadTop_End
+    100004: Mario:Hips
+    100006: Mario:LeftArm
+    100008: Mario:LeftFoot
+    100010: Mario:LeftForeArm
+    100012: Mario:LeftHand
+    100014: Mario:LeftHandIndex1
+    100016: Mario:LeftHandIndex2
+    100018: Mario:LeftHandIndex3
+    100020: Mario:LeftHandIndex4
+    100022: Mario:LeftLeg
+    100024: Mario:LeftShoulder
+    100026: Mario:LeftToe_End
+    100028: Mario:LeftToeBase
+    100030: Mario:LeftUpLeg
+    100032: Mario:ma_mdl1
+    100034: Mario:Neck
+    100036: Mario:RightArm
+    100038: Mario:RightFoot
+    100040: Mario:RightForeArm
+    100042: Mario:RightHand
+    100044: Mario:RightHandIndex1
+    100046: Mario:RightHandIndex2
+    100048: Mario:RightHandIndex3
+    100050: Mario:RightHandIndex4
+    100052: Mario:RightLeg
+    100054: Mario:RightShoulder
+    100056: Mario:RightToe_End
+    100058: Mario:RightToeBase
+    100060: Mario:RightUpLeg
+    100062: Mario:Spine
+    100064: Mario:Spine1
+    100066: Mario:Spine2
+    100068: //RootNode
+    400000: Mario:Head
+    400002: Mario:HeadTop_End
+    400004: Mario:Hips
+    400006: Mario:LeftArm
+    400008: Mario:LeftFoot
+    400010: Mario:LeftForeArm
+    400012: Mario:LeftHand
+    400014: Mario:LeftHandIndex1
+    400016: Mario:LeftHandIndex2
+    400018: Mario:LeftHandIndex3
+    400020: Mario:LeftHandIndex4
+    400022: Mario:LeftLeg
+    400024: Mario:LeftShoulder
+    400026: Mario:LeftToe_End
+    400028: Mario:LeftToeBase
+    400030: Mario:LeftUpLeg
+    400032: Mario:ma_mdl1
+    400034: Mario:Neck
+    400036: Mario:RightArm
+    400038: Mario:RightFoot
+    400040: Mario:RightForeArm
+    400042: Mario:RightHand
+    400044: Mario:RightHandIndex1
+    400046: Mario:RightHandIndex2
+    400048: Mario:RightHandIndex3
+    400050: Mario:RightHandIndex4
+    400052: Mario:RightLeg
+    400054: Mario:RightShoulder
+    400056: Mario:RightToe_End
+    400058: Mario:RightToeBase
+    400060: Mario:RightUpLeg
+    400062: Mario:Spine
+    400064: Mario:Spine1
+    400066: Mario:Spine2
+    400068: //RootNode
+    2100000: Mario__mat_head1
+    2100002: Mario__mat_head_2_1
+    2100004: Mario__mat_head_3_1
+    2100006: Mario__mat_head_4_1
+    2100008: Mario__mat_head_5_1
+    2100010: Mario__mat_head_6_1
+    2100012: Mario__mat_head_7_1
+    2100014: Mario__mat_eye_L1
+    2100016: Mario__mat_eye_R1
+    2100018: Mario__mat_head_8_1
+    2100020: Mario__mat_mouse1
+    4300000: Mario:ma_mdl1
+    7400000: Sitting and You know
+    9500000: //RootNode
+    13700000: Mario:ma_mdl1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sitting and You know
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 326
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Mario:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Mario:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Sitting Idle (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mario:ma_mdl1
+      parentName: Sitting Idle (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mario:Hips
+      parentName: Sitting Idle (1)(Clone)
+      position: {x: -0.0017919528, y: 0.5270673, z: 0.0873026}
+      rotation: {x: -0.00000002328306, y: -0.000000011641532, z: -0.000000005820766,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Mario:Spine
+      parentName: Mario:Hips
+      position: {x: -0, y: 0.06865741, z: -0.0049307845}
+      rotation: {x: -0.035839323, y: -1.8334934e-10, z: 0.000000005112621, w: 0.9993576}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: Mario:Spine1
+      parentName: Mario:Spine
+      position: {x: -0, y: 0.0803067, z: 2.5412566e-10}
+      rotation: {x: -0.000000033527613, y: 0.0000000119780905, z: -0.0000000042688497,
+        w: 1}
+      scale: {x: 0.9999997, y: 1, z: 0.99999994}
+    - name: Mario:Spine2
+      parentName: Mario:Spine1
+      position: {x: -0, y: 0.091779046, z: -4.6954367e-11}
+      rotation: {x: 0.000000018626451, y: 0.000000011194667, z: 0.0000000066397257,
+        w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Mario:RightShoulder
+      parentName: Mario:Spine2
+      position: {x: 0.08822425, y: 0.084513746, z: -0.0017935674}
+      rotation: {x: -0.5439997, y: -0.44938943, z: 0.55517215, w: -0.44033787}
+      scale: {x: 1.0000005, y: 1.0000013, z: 1.0000015}
+    - name: Mario:RightArm
+      parentName: Mario:RightShoulder
+      position: {x: -1.5916786e-10, y: 0.18170238, z: -0.000000002253916}
+      rotation: {x: -0.06928621, y: -0.00053979456, z: 0.007771075, w: 0.99756646}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.9999998}
+    - name: Mario:RightForeArm
+      parentName: Mario:RightArm
+      position: {x: -6.702909e-12, y: 0.060269393, z: -9.236473e-11}
+      rotation: {x: 0.025592811, y: -0.00053530757, z: 0.020901777, w: -0.99945384}
+      scale: {x: 1.0000006, y: 0.9999992, z: 1}
+    - name: Mario:RightHand
+      parentName: Mario:RightForeArm
+      position: {x: -1.2530074e-11, y: 0.097828366, z: 3.039446e-11}
+      rotation: {x: -0.015506894, y: -0.0030799808, z: 0.19478689, w: 0.9807182}
+      scale: {x: 0.99999976, y: 1.0000007, z: 0.9999997}
+    - name: Mario:RightHandIndex1
+      parentName: Mario:RightHand
+      position: {x: -0.0000000018424269, y: 0.11775634, z: 2.2900763e-10}
+      rotation: {x: 0.025064148, y: 0.9218721, z: -0.06049919, w: 0.38192084}
+      scale: {x: 0.99999946, y: 0.9999991, z: 0.9999999}
+    - name: Mario:RightHandIndex2
+      parentName: Mario:RightHandIndex1
+      position: {x: -0.0000000012238563, y: 0.095068365, z: -0.0000000030720175}
+      rotation: {x: 0.44262338, y: -0.000000029802312, z: -0.075444765, w: 0.89352816}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000002}
+    - name: Mario:RightHandIndex3
+      parentName: Mario:RightHandIndex2
+      position: {x: -0.010600377, y: 0.04322801, z: -0.062191043}
+      rotation: {x: -0.002271175, y: -0.28825763, z: -0.19997634, w: 0.93643576}
+      scale: {x: 1.000001, y: 1.0000008, z: 1}
+    - name: Mario:RightHandIndex4
+      parentName: Mario:RightHandIndex3
+      position: {x: -0.06949779, y: 0.031486943, z: -0.044597853}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mario:Neck
+      parentName: Mario:Spine2
+      position: {x: -0, y: 0.10325139, z: -7.0459066e-10}
+      rotation: {x: 0.035839338, y: 1.7763568e-15, z: 2.3127377e-16, w: 0.9993576}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Mario:Head
+      parentName: Mario:Neck
+      position: {x: -0, y: 0.03540642, z: 0.0055581927}
+      rotation: {x: 0.000000022351742, y: -0.000000011641534, z: -0.0000000029103835,
+        w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: Mario:HeadTop_End
+      parentName: Mario:Head
+      position: {x: -0, y: 0.6034385, z: 0.09472937}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mario:LeftShoulder
+      parentName: Mario:Spine2
+      position: {x: -0.08822425, y: 0.084449746, z: -0.0009024011}
+      rotation: {x: 0.5469529, y: -0.44699028, z: 0.5525816, w: 0.44237515}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000011}
+    - name: Mario:LeftArm
+      parentName: Mario:LeftShoulder
+      position: {x: 1.5304908e-11, y: 0.18170236, z: -9.183806e-10}
+      rotation: {x: -0.07703896, y: -0.0029114038, z: 0.027445465, w: 0.99664605}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000006}
+    - name: Mario:LeftForeArm
+      parentName: Mario:LeftArm
+      position: {x: 1.6622491e-10, y: 0.06041873, z: -1.4241536e-10}
+      rotation: {x: -0.021703497, y: 0.0007982722, z: -0.036746815, w: 0.99908864}
+      scale: {x: 1.000001, y: 1.0000001, z: 1.0000005}
+    - name: Mario:LeftHand
+      parentName: Mario:LeftForeArm
+      position: {x: 3.849956e-12, y: 0.09772826, z: -8.55502e-11}
+      rotation: {x: -0.07850819, y: 0.004674965, z: -0.019490007, w: 0.996712}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999994}
+    - name: Mario:LeftHandIndex1
+      parentName: Mario:LeftHand
+      position: {x: 2.5700758e-10, y: 0.1935712, z: -0.0000000010901945}
+      rotation: {x: 0.06233436, y: 0.3393557, z: -0.022543704, w: 0.93831974}
+      scale: {x: 0.99999976, y: 1.0000005, z: 0.99999964}
+    - name: Mario:LeftHandIndex2
+      parentName: Mario:LeftHandIndex1
+      position: {x: 9.750196e-10, y: 0.07474767, z: -0.0000000012270296}
+      rotation: {x: 0.37397996, y: -0.00000032782546, z: -0.27241042, w: 0.8865278}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000015}
+    - name: Mario:LeftHandIndex3
+      parentName: Mario:LeftHandIndex2
+      position: {x: -0.018761402, y: 0.020490998, z: -0.025756683}
+      rotation: {x: -0.21531558, y: -0.17584525, z: 0.01694221, w: 0.96043247}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000001}
+    - name: Mario:LeftHandIndex4
+      parentName: Mario:LeftHandIndex3
+      position: {x: -0.035992, y: 0.0433665, z: -0.0073091662}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mario:RightUpLeg
+      parentName: Mario:Hips
+      position: {x: 0.09883844, y: -0.037935868, z: 0.0017269147}
+      rotation: {x: -0.0001515881, y: -0.021668397, z: 0.9997407, w: -0.006995155}
+      scale: {x: 1.0000001, y: 0.99999946, z: 1.0000001}
+    - name: Mario:RightLeg
+      parentName: Mario:RightUpLeg
+      position: {x: 4.612117e-11, y: 0.16794464, z: -8.342481e-11}
+      rotation: {x: -0.05354038, y: 0.0013225233, z: -0.024658209, w: 0.9982603}
+      scale: {x: 1.0000012, y: 1.0000017, z: 0.9999998}
+    - name: Mario:RightFoot
+      parentName: Mario:RightLeg
+      position: {x: -9.106671e-12, y: 0.11299576, z: -4.2386594e-10}
+      rotation: {x: 0.41300476, y: -0.044464458, z: 0.020193122, w: 0.9094186}
+      scale: {x: 1.0000013, y: 1.0000012, z: 1.0000002}
+    - name: Mario:RightToeBase
+      parentName: Mario:RightFoot
+      position: {x: -0.00000000108648, y: 0.25547713, z: -0.000000007467861}
+      rotation: {x: 0.42348337, y: -0.016546195, z: 0.0077364324, w: 0.9057197}
+      scale: {x: 0.9999993, y: 1.0000004, z: 0.9999995}
+    - name: Mario:RightToe_End
+      parentName: Mario:RightToeBase
+      position: {x: 1.4666904e-10, y: 0.09255533, z: -8.416446e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mario:LeftUpLeg
+      parentName: Mario:Hips
+      position: {x: -0.09883844, y: -0.037935868, z: -0.001004622}
+      rotation: {x: 0.000094233445, y: -0.01345784, z: 0.99988496, w: 0.0070001995}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000002}
+    - name: Mario:LeftLeg
+      parentName: Mario:LeftUpLeg
+      position: {x: 8.2595104e-11, y: 0.16784777, z: -1.1179748e-10}
+      rotation: {x: -0.07481082, y: -0.0018497884, z: 0.024649309, w: 0.9968913}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1}
+    - name: Mario:LeftFoot
+      parentName: Mario:LeftLeg
+      position: {x: 1.04516305e-10, y: 0.11348596, z: -5.2686237e-11}
+      rotation: {x: 0.43727195, y: 0.04122196, z: -0.020069031, w: 0.89816}
+      scale: {x: 1.0000008, y: 1.0000011, z: 1}
+    - name: Mario:LeftToeBase
+      parentName: Mario:LeftFoot
+      position: {x: -2.602548e-10, y: 0.26164263, z: -0.000000007365704}
+      rotation: {x: 0.41131833, y: 0.027639918, z: -0.012479637, w: 0.91098714}
+      scale: {x: 0.9999991, y: 0.99999994, z: 0.99999934}
+    - name: Mario:LeftToe_End
+      parentName: Mario:LeftToeBase
+      position: {x: 3.8474438e-10, y: 0.085442714, z: 2.6617765e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
