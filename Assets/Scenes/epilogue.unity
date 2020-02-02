@@ -9578,7 +9578,7 @@ MonoBehaviour:
   transitionOut: {fileID: 1354485499}
   canvas: {fileID: 8400000, guid: ccf7abc83c3374ed78bf050d36ebc625, type: 2}
   finalImage: {fileID: 1295948867}
-  timeBetweenReset: 0.67
+  timeBetweenReset: 1.33
 --- !u!4 &844291255
 Transform:
   m_ObjectHideFlags: 0
