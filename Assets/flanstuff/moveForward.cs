@@ -18,6 +18,16 @@ public class moveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.z >= 10822)
+        {
+            Debug.Log("to julian's scene now");
+        }
+
+        if (whipTimer >= 1)
+        {
+            whipTimer = 1; 
+        }
+
         transform.position += new Vector3(0, 0, 1) * Time.deltaTime * speed;
 
         if (whipTimer > 0)
@@ -30,7 +40,7 @@ public class moveForward : MonoBehaviour
             speed = 50; 
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetMouseButton(0))
         {
             whipTimer += .5f;
             whip.Play();
