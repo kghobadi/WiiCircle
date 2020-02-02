@@ -6,6 +6,9 @@ namespace Rick {
 
     public class Manager : MonoBehaviour
     {
+        public delegate void OnLose();
+        public static event OnLose Lost;
+
         Paper paper;
 
         [SerializeField] SimpleTransition transitionOut;
@@ -24,7 +27,8 @@ namespace Rick {
         void Start()
         {
             paper = FindObjectOfType<Paper>();
-            paper.onCrumbled += Restart;
+
+            Paper.onCrumbled += Restart;
         }
 
         // Update is called once per frame
@@ -35,7 +39,10 @@ namespace Rick {
 
             if(deaths >= maxDeaths){
                 transitionOut.TransitionOut();
+
                 ending = true;
+                if(Lost != null)
+                    Lost();
             }
         }
 
@@ -64,10 +71,7 @@ namespace Rick {
         IEnumerator Respawn(){
             yield return new WaitForSeconds(timeBetweenReset);
             paper.Assemble();
-        }
-
-        void OnDestroy() {
-            paper.onCrumbled -= Restart;    
+            
         }
     }
 

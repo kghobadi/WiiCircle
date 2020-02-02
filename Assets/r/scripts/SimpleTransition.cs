@@ -7,6 +7,9 @@ using UnityEngine.Events;
 
 public class SimpleTransition : MonoBehaviour
 {
+    public delegate void OnAlphaChanged(float a);
+    public event OnAlphaChanged onAlphaChanged;
+
     public UnityEvent OnEnter, OnExit;
 
     [SerializeField] CanvasGroup group;
@@ -37,6 +40,9 @@ public class SimpleTransition : MonoBehaviour
         if(dist > .001f) {
             alpha = Mathf.Lerp(alpha, target, Mathf.Clamp01(transition_t / transitionTime));
             transition_t += Time.deltaTime;
+
+            if(onAlphaChanged != null)
+                onAlphaChanged(alpha);
         }
         else {
             alpha = target;

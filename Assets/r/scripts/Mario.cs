@@ -21,14 +21,21 @@ namespace Rick {
         [Range(0f, 1f)] public float lookAtWeight = 1f;
         [SerializeField] float distanceFromPage = .1f;
 
+                         AudioSource audioSource;
+        [SerializeField] AudioClip onCrumble, onLose, onSnore;
+
         void Awake() {
             animator = GetComponent<Animator>();
+            audioSource = GetComponent<AudioSource>();
         }
 
         // Start is called before the first frame update
         void Start()
         {
             driver = FindObjectOfType<Driver>();
+            
+            Paper.onCrumbled += Crumbled;
+            Manager.Lost += Lost;
         }
 
         void Update() {
@@ -59,6 +66,35 @@ namespace Rick {
                 }
             }
         }
+
+        void Crumbled(){
+            if(stillCrumble)
+                audioSource.PlayOneShot(onCrumble);
+        }
+
+        bool stillCrumble = true;
+
+        void Lost(){
+            stillCrumble = false;
+            StartCoroutine("Losing");
+        }
+
+        public void Snore(){
+            audioSource.loop = true;
+            audioSource.clip = onSnore;
+            audioSource.Play();
+        }
+
+        IEnumerator Losing(){
+            yield return new WaitForSeconds(1.5f);
+             audioSource.PlayOneShot(onLose);
+        }
+
+        private void OnDestroy() {
+            Paper.onCrumbled -= Crumbled;
+            Manager.Lost -= Lost;
+        }
+    
     }
 
 }
