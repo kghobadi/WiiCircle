@@ -15,9 +15,13 @@ public class PlayerMove : MonoBehaviour
 
     public PersonDance sparrot;
     public AudioSource jbAudio;
+    public AudioClip jbClip1;
     public AudioClip countryRoad;
 
     public Transform sparrotDancePos;
+    public GameObject sparrotSpotLight;
+
+    public Animator[] dancers;
 
     void Start()
     {
@@ -25,6 +29,8 @@ public class PlayerMove : MonoBehaviour
         ani = GetComponentInChildren<Animator>();
     }
     bool shouldDoJBCam, shouldDoPenpenCam, shouldDoSparrotCam;
+
+    float endTim = 0;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -34,7 +40,7 @@ public class PlayerMove : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 Collider c = hit.collider;
-                if (c.gameObject == tavern)
+                if (c.gameObject == tavern && !shouldDoJBCam)
                     nma.SetDestination(hit.point);
                 else if (c.gameObject == jukeBox)
                 {
@@ -58,7 +64,6 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-
         if (shouldDoSparrotCam)// && Vector3.Distance(transform.position, sparrotDancePos.position) < 0.7f)
         {
             topCam.gameObject.SetActive(false);
@@ -71,32 +76,44 @@ public class PlayerMove : MonoBehaviour
             shouldDoJBCam = false;
             shouldDoPenpenCam = false;
 
-            if (!hasDoneCR)
-                DoCountryRoad();
 
+            if (!hasDoneCR)
+                StartCoroutine(DoCountryRoad());
+            else
+            {
+                if (endTim < 30)
+                    endTim += Time.deltaTime;
+                // else
+                //DOTRansition
+            }
+
+
+            sparrotSpotLight.SetActive(true);
         }
-        else if (shouldDoJBCam && Vector3.Distance(transform.position, jukeBox.transform.position) < 0.7f)
+        else if (shouldDoJBCam)// && Vector3.Distance(transform.position, jukeBox.transform.position) < 0.7f)
         {
             topCam.gameObject.SetActive(false);
             jbCam.gameObject.SetActive(true);
             penpenCam.gameObject.SetActive(false);
             sparrotCam.gameObject.SetActive(false);
-            ani.SetBool("atJB", true);
 
-            transform.LookAt(jukeBox.transform);
+            if (Vector3.Distance(transform.position, jukeBox.transform.position) < 0.7f)
+            {
+                ani.SetBool("atJB", true);
+
+                transform.LookAt(jukeBox.transform);
+                if (!hasSetSong)
+                    StartCoroutine(DoSong());
+            }
 
             shouldDoPenpenCam = false;
-
-            if (!hasSetSong)
-                StartCoroutine(DoSong());
         }
-        else if (shouldDoPenpenCam && Vector3.Distance(transform.position, penpen.transform.position) < 1.7f)
+        else if (Vector3.Distance(transform.position, penpen.transform.position) < 1.7f)// && shouldDoPenpenCam)
         {
             topCam.gameObject.SetActive(false);
             jbCam.gameObject.SetActive(false);
             penpenCam.gameObject.SetActive(true);
             sparrotCam.gameObject.SetActive(false);
-
 
             shouldDoJBCam = false;
         }
@@ -113,8 +130,6 @@ public class PlayerMove : MonoBehaviour
             shouldDoPenpenCam = false;
         }
 
-
-
         ani.SetBool("walking", nma.velocity.magnitude > 0.01f);
     }
 
@@ -123,20 +138,25 @@ public class PlayerMove : MonoBehaviour
     {
         hasSetSong = true;
         yield return new WaitForSeconds(3.5f);
+        jbAudio.clip = jbClip1;
         jbAudio.Play();
         ani.SetBool("dance", true);
         shouldDoJBCam = false;
+
+        foreach (Animator a in dancers)
+            a.SetBool("doIt", true);
     }
     bool hasDoneCR;
-    void DoCountryRoad()
+    IEnumerator DoCountryRoad()
     {
+        hasDoneCR = true;
+        yield return new WaitForSeconds(3.5f);
         sparrot.shouldDance = true;
         jbAudio.clip = countryRoad;
         jbAudio.Play();
+        ani.SetBool("croad", true);
         jbCam.LookAt = sparrot.transform;
-        hasDoneCR = true;
     }
-
 
     private void OnAnimatorMove()
     {
