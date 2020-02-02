@@ -119,12 +119,10 @@ public class MarioClicker : AudioHandler
         lerpScale.SetScaler(3f, lerpScale.origScale);
 
         //increase music volume in the mixer 
-        float tempVol;
-        mixer.GetFloat("musicVol", out tempVol);
-        if(tempVol <= 1)
-            mixer.SetFloat("musicVol", 3);
-        else
-            mixer.SetFloat("musicVol", tempVol += 1);
+        //float tempVol;
+        //mixer.GetFloat("musicVol", out tempVol);
+        //if(tempVol < 15) 
+        //    mixer.SetFloat("musicVol", tempVol += 0.5f);
 
         //cMachine fuckup
         if (cCamera)

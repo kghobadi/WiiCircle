@@ -11,7 +11,8 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
-  m_StartSnapshot: {fileID: 24500006}
+  - {fileID: 245856332261888958}
+  m_StartSnapshot: {fileID: 245856332261888958}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
@@ -25,7 +26,7 @@ AudioMixerController:
     - 8b7e316ff6c187b49bc52aa2ecd8996a
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: 245856332261888958}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -66,7 +67,7 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: MarioScreamer
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 027ab27d2c541f74ab0ae0b4e50ef477
   m_FloatValues:
@@ -136,3 +137,16 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!245 &245856332261888958
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mario v Sachiel
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: e4329b0a841035b4eac87283c4cdd340
+  m_FloatValues:
+    4cb1e830eba6e274081d16d6a49abe62: -2.5738313
+    d9b39999d63aafd4ebc0f6a6d44123da: 2.750018
+  m_TransitionOverrides: {}
