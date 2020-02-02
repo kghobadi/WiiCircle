@@ -7,6 +7,9 @@ using UnityEngine.Events;
 
 public class SimpleTransition : MonoBehaviour
 {
+    public delegate void OnAlphaChanged(float a);
+    public event OnAlphaChanged onAlphaChanged;
+
     public UnityEvent OnEnter, OnExit;
 
     [SerializeField] CanvasGroup group;
@@ -17,7 +20,7 @@ public class SimpleTransition : MonoBehaviour
     float transitionTime = 0f, transition_t = 0f;
     float direction = 0f;
 
-    [SerializeField] bool onawake = false;
+    [SerializeField] bool onawake = false, overrideInteractable = true;
     [SerializeField] float defaultTransitionIn = 1f, defaultTransitionOut = 1f;
 
     private void Awake() {
@@ -37,6 +40,9 @@ public class SimpleTransition : MonoBehaviour
         if(dist > .001f) {
             alpha = Mathf.Lerp(alpha, target, Mathf.Clamp01(transition_t / transitionTime));
             transition_t += Time.deltaTime;
+
+            if(onAlphaChanged != null)
+                onAlphaChanged(alpha);
         }
         else {
             alpha = target;
@@ -61,9 +67,11 @@ public class SimpleTransition : MonoBehaviour
 
         group.alpha = alpha;
     
-        bool interactable = (alpha > 0f);
-            group.blocksRaycasts = interactable;
-            group.interactable = interactable;
+        if(overrideInteractable){
+            bool interactable = (alpha > 0f);
+                group.blocksRaycasts = interactable;
+                group.interactable = interactable;
+        }
     }
 
     public void TransitionIn(){
