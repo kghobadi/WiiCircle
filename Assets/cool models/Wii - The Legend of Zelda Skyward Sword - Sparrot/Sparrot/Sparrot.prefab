@@ -443,8 +443,8 @@ MonoBehaviour:
   scaleX: {x: 1, y: 1.2}
   scaleY: {x: 1, y: 1.2}
   scaleZ: {x: 1, y: 1.2}
-  randomSpectrumBand: 0
   spectrumBand: 1
+  pingPongSpeed: 1
   originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494360
 GameObject:
@@ -485,6 +485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782002482922784250}
+  - component: {fileID: 8640133619470020884}
   m_Layer: 0
   m_Name: Leg
   m_TagString: Untagged
@@ -506,6 +507,33 @@ Transform:
   m_Father: {fileID: 4782002482922784252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8640133619470020884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782002482922494362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b58e939102c4eb4958bb97fd065707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posMoveType: 0
+  posX: {x: 0, y: 0}
+  posY: {x: 0, y: 0}
+  posZ: {x: 0, y: 0}
+  rotMoveType: 0
+  rotX: {x: 0, y: 0}
+  rotY: {x: 0, y: 0}
+  rotZ: {x: 0, y: 0}
+  scaleMoveType: 0
+  scaleX: {x: 0.7, y: 1.4}
+  scaleY: {x: 0.7, y: 1.4}
+  scaleZ: {x: 0.7, y: 1.4}
+  spectrumBand: 1
+  pingPongSpeed: 1
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494364
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782002482922784194}
+  - component: {fileID: 570653550389415033}
   m_Layer: 0
   m_Name: HandL
   m_TagString: Untagged
@@ -695,6 +724,33 @@ Transform:
   m_Father: {fileID: 4782002482922784202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570653550389415033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782002482922494434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b58e939102c4eb4958bb97fd065707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posMoveType: 0
+  posX: {x: 0, y: 0}
+  posY: {x: 0, y: 0}
+  posZ: {x: 0, y: 0}
+  rotMoveType: 0
+  rotX: {x: 0, y: 0}
+  rotY: {x: 0, y: 190}
+  rotZ: {x: 0, y: 0}
+  scaleMoveType: 0
+  scaleX: {x: 1, y: 2}
+  scaleY: {x: 1, y: 2}
+  scaleZ: {x: 1, y: 2}
+  spectrumBand: 4
+  pingPongSpeed: 1
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494436
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782002482922784198}
+  - component: {fileID: 4908541966982327195}
   m_Layer: 0
   m_Name: FingerL
   m_TagString: Untagged
@@ -755,6 +812,33 @@ Transform:
   m_Father: {fileID: 4782002482922784194}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4908541966982327195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782002482922494438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b58e939102c4eb4958bb97fd065707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posMoveType: 0
+  posX: {x: 0, y: 0}
+  posY: {x: 0, y: 0}
+  posZ: {x: 0, y: 0}
+  rotMoveType: 0
+  rotX: {x: 0, y: -120}
+  rotY: {x: 0, y: 0}
+  rotZ: {x: 0, y: 0}
+  scaleMoveType: 0
+  scaleX: {x: 1, y: 1}
+  scaleY: {x: 1, y: 1}
+  scaleZ: {x: 1, y: 1}
+  spectrumBand: 5
+  pingPongSpeed: 0.6
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494440
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782002482922784202}
+  - component: {fileID: 5378222462258461390}
   m_Layer: 0
   m_Name: ElbowL
   m_TagString: Untagged
@@ -817,6 +902,33 @@ Transform:
   m_Father: {fileID: 4782002482922784212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5378222462258461390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782002482922494442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b58e939102c4eb4958bb97fd065707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posMoveType: 0
+  posX: {x: 0, y: 0}
+  posY: {x: 0, y: 0}
+  posZ: {x: 0, y: 0}
+  rotMoveType: 0
+  rotX: {x: 0, y: 0}
+  rotY: {x: 0, y: 0}
+  rotZ: {x: 0, y: 120}
+  scaleMoveType: 0
+  scaleX: {x: 1, y: 1}
+  scaleY: {x: 1, y: 1}
+  scaleZ: {x: 1, y: 1}
+  spectrumBand: 1
+  pingPongSpeed: 1
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494444
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,14 +978,14 @@ MonoBehaviour:
   posZ: {x: 0, y: 0}
   rotMoveType: 0
   rotX: {x: 0, y: 0}
-  rotY: {x: 5, y: -80}
+  rotY: {x: 5, y: -50}
   rotZ: {x: 0, y: 0}
   scaleMoveType: 0
   scaleX: {x: 1, y: 1}
   scaleY: {x: 1, y: 1}
   scaleZ: {x: 1, y: 1}
-  randomSpectrumBand: 0
-  spectrumBand: 5
+  spectrumBand: 4
+  pingPongSpeed: 1
   originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494446
 GameObject:
@@ -930,8 +1042,8 @@ MonoBehaviour:
   scaleX: {x: 1, y: 1}
   scaleY: {x: 1, y: 1}
   scaleZ: {x: 1, y: 1}
-  randomSpectrumBand: 0
   spectrumBand: 4
+  pingPongSpeed: 1
   originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494448
 GameObject:
@@ -1003,6 +1115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782002482922784212}
+  - component: {fileID: 8654595568541939958}
   m_Layer: 0
   m_Name: ArmL
   m_TagString: Untagged
@@ -1025,6 +1138,33 @@ Transform:
   m_Father: {fileID: 4782002482922784234}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8654595568541939958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782002482922494452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b58e939102c4eb4958bb97fd065707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posMoveType: 0
+  posX: {x: 0, y: 0}
+  posY: {x: 0, y: 0}
+  posZ: {x: 0, y: 0}
+  rotMoveType: 0
+  rotX: {x: -20, y: 20}
+  rotY: {x: 0, y: 0}
+  rotZ: {x: 60, y: 100}
+  scaleMoveType: 0
+  scaleX: {x: 1, y: 1}
+  scaleY: {x: 1, y: 1}
+  scaleZ: {x: 1, y: 1}
+  spectrumBand: 5
+  pingPongSpeed: 2
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4782002482922494454
 GameObject:
   m_ObjectHideFlags: 0

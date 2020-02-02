@@ -1,0 +1,3 @@
+Use the files in the root folder if you want the original, unmodified model and textures (yes, there's actually more than one texture for Princess Peach's letter); otherwise, if you want something a little more optimized (but still identical), you can use the files in the "_Optimized" folder-- they only have one material and texture, and are generally more organized.
+
+This was ripped by Hunter Towe. Credit is not necessary.
