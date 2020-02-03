@@ -31,27 +31,24 @@ namespace Rick {
             Paper.onCrumbled += Restart;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
+        void Restart(){
+            ++deaths;
+            if(deaths >= maxDeaths)
+                End();
+
+            StartCoroutine("Respawn");
+        }
+
+        public void End(){
             if(ending)
                 return;
 
-            if(deaths >= maxDeaths){
-                transitionOut.TransitionOut();
+            PassTexture();
+            transitionOut.TransitionOut();
 
-                ending = true;
-                if(Lost != null)
-                    Lost();
-            }
-        }
-
-        void Restart(){
-            ++deaths;
-            if(!ending)
-                PassTexture();
-
-            StartCoroutine("Respawn");
+            ending = true;  
+            if(Lost != null)
+                Lost();
         }
 
         void PassTexture(){
