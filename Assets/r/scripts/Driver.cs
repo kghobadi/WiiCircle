@@ -8,11 +8,15 @@ namespace Rick {
     {
         Paper paper;
         Nerves nerves;
+        Manager manager;
 
 
         public float speed = 0f;
         public float threshold = 133f;
         Vector3 a, b;
+
+        float timer = 0f;
+        float timeThreshold = 13f;
 
         Vector3 m_position;
         public Vector3 position {
@@ -63,6 +67,7 @@ namespace Rick {
             nerves = GetComponent<Nerves>();
 
             paper = FindObjectOfType<Paper>();
+            manager = FindObjectOfType<Manager>();
 
             a = b = Input.mousePosition;
             origin = transform.position;
@@ -79,6 +84,14 @@ namespace Rick {
 
             ray = camera.ScreenPointToRay(mouse);
             raycastHit = new RaycastHit();
+
+            if(Input.GetMouseButton(0))
+                timer = 0f;
+            else
+                timer += Time.deltaTime;
+
+            if(timer >= timeThreshold)
+                manager.End();
 
             m_hitting = Physics.Raycast(ray, out raycastHit, rayDistance, rayMask.value);
             if(colliding){
